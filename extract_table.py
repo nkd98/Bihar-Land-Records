@@ -6,25 +6,20 @@ Created on Sun Oct 22 10:57:22 2023
 """
 
 ### IMPORTS
-
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.by import By  
 
 from selenium.webdriver.chrome.service import Service
-
-from selenium.webdriver.support.ui import WebDriverWait
-
-from selenium.webdriver.support import expected_conditions as EC
-
-from bs4 import BeautifulSoup
-
-from selenium.webdriver.support.select import Select
-import pandas as pd
-import requests
-
 from selenium.webdriver.chrome.service import Service as ChromeService 
 from webdriver_manager.chrome import ChromeDriverManager
 
-from selenium.webdriver.common.by import By  
+from bs4 import BeautifulSoup
+
+import pandas as pd
+import requests
 
 
 ## 1. Go to the website: https://biharbhumi.bihar.gov.in/Biharbhumi/
